@@ -60,7 +60,7 @@
 
       text-transform: uppercase;
       font-weight: 500;
-      
+
       transition: all 0.3s ease-in-out;
 
       &:hover {
@@ -124,7 +124,7 @@
     svg {
       width: 35px;
       height: 35px;
-      color: var(--secondary-color); 
+      color: var(--secondary-color);
       margin: 0.5rem 1rem;
     }
 
@@ -142,7 +142,30 @@
 
       li {
         margin: 1rem;
+
+        a {
+          color: var(--gray-color);
+          text-decoration: none;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--secondary-color);
+          }
+        }
       }
     }
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+
+  }
+
+  @media screen and (min-width: 900px) {
+    display: none;
   }
 }
