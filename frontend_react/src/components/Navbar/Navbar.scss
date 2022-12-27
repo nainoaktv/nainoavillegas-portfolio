@@ -67,5 +67,11 @@
         color: var(--secondary-color);
       }
     }
+
+    &:hover {
+      div {
+        background: var(--secondary-color);
+      }
+    }
   }
 }
