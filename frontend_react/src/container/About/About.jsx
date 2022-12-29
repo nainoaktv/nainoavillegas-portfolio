@@ -3,24 +3,23 @@ import { motion } from 'framer-motion';
 
 import { images } from '../../constants';
 import './About.scss';
+import { urlFor, client } from '../../client';
 
-const abouts = [
-  {title: 'Front End', description: 'I am a good developer', imgUrl: images.about01},
-  {title: 'Back End', description: 'I am a good developer', imgUrl: images.about02},
-  {title: 'Full Stack', description: 'I am a good developer', imgUrl: images.about03},
-  {title: 'Web Development', description: 'I am a good developer', imgUrl: images.about04},
-]
 
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client.fetch(query)
+      .then((data) => setAbouts(data))
+  }, []);
+  
+
   return (
     <>
-      <h2 className="head-text">
-        I Know that
-        <span>Good Design</span>
-        <br />
-        means
-        <span>Good Business</span>
-      </h2>
+      <h2 className="head-text">Learning ➮ <span>Growing</span><br /> making <span>a Difference</span></h2>
 
       <div className="app__profiles">
         {abouts.map((about, idx) => (
