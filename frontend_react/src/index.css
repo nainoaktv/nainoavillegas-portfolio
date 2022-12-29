@@ -3,12 +3,11 @@
 :root {
   --font-base: "DM Sans", sans-serif;
 
-  --primary-color: #edf2f8;
-  --secondary-color: #313bac;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
-  --brown-color: #46364a;
+  --primary-color: #0b0c10;
+  --secondary-color: #66fcf1;
+  --lightGray-color: #C5C6C7;
+  --gray-color: #1F2833;
+  --darkTeal-color: #45A29E;
   --white-color: #ffffff;
 }
 

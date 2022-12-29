@@ -25,9 +25,9 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
-            <span>🤙🏼</span>
+            {/* <span>🤙🏼</span> */}
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Aloha, I am</p>
+              <p className="p-text">E Komo Mai, I'm</p>
               <h1 className="head-text">Nainoa</h1>
             </div>
           </div>
@@ -44,13 +44,14 @@ const Header = () => {
         className="app__header-img"
       >
         <img src={images.pfp} alt="profile_bg" />
-        <motion.img
+        {/* If I want to add circle behing header photo */}
+        {/* <motion.img
           whileInView={{ scale: [0, 1]}}
           transition={{ duration: 1, ease: "easeInOut" }}
           src={images.circle}
           alt="profile_circle"
           className="overlay_circle"
-        />
+        /> */}
 
       </motion.div>
 
