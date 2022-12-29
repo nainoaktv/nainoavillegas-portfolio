@@ -132,13 +132,13 @@
 
   @media screen and (min-width: 2000px) {
     div:nth-child(1) {
-      width: 200px;
-      height: 200px;
+      width: 175px;
+      height: 175px;
     }
   
     div:nth-child(2) {
-      width: 300px;
-      height: 300px;
+      width: 225px;
+      height: 225px;
     }
   
     div:nth-child(3) {
@@ -162,6 +162,7 @@
 .app__header-img {
   flex: 1;
   height: 100%;
+  max-width: 400px;
 
   display: flex;
   justify-content: flex-end;
@@ -169,7 +170,8 @@
   position: relative;
 
   img {
-    width: 100%;
+    width: 75%;
+    border-radius: 50%;
     object-fit: contain;
     z-index: 1;
   }
@@ -181,7 +183,7 @@
     bottom: 0;
     z-index: 0;
     width: 100%;
-    height: 90%;
+    height: 100%;
   }
 
   @media screen and (max-width: 1200px) {
