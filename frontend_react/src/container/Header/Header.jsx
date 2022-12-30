@@ -25,7 +25,7 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
-            {/* <span>🤙🏼</span> */}
+            <span>🤙🏼</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">E Komo Mai, I'm</p>
               <h1 className="head-text">Nainoa</h1>
@@ -44,7 +44,7 @@ const Header = () => {
         className="app__header-img"
       >
         <img src={images.pfp} alt="profile_bg" />
-        {/* If I want to add circle behing header photo */}
+        {/* IF NEEDED: COMMENT BACK IN TO USE CIRCLE BACKGROUND */}
         {/* <motion.img
           whileInView={{ scale: [0, 1]}}
           transition={{ duration: 1, ease: "easeInOut" }}

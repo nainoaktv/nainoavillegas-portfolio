@@ -59,6 +59,7 @@
   .badge-cmp, .tag-cmp {
     padding: 1rem 2rem;
     border: var(--gray-color);
+    text-transform: uppercase;
     border-radius: 15px;
     flex-direction: row;
     width: auto;
@@ -104,7 +105,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: var(--gray-color);
+    background: var(--primary-color);
     
     box-shadow: 0 0 20px rgb(255, 255, 255);
 
@@ -174,6 +175,7 @@
     border-radius: 50%;
     object-fit: contain;
     z-index: 1;
+    box-shadow: 0 0 30px rgb(255, 255, 255);
   }
 
   .overlay_circle {
