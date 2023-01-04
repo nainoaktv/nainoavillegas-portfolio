@@ -1,17 +1,23 @@
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
+import bootstrap from '../assets/bootstrap.png';
 import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
+import django from '../assets/django.png';
+import express from '../assets/express.png';
 import figma from '../assets/figma.png';
+import flask from '../assets/flask.png';
 import flutter from '../assets/flutter.png';
 import git from '../assets/git.png';
 import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
+import mongoDB from '../assets/mongoDB.png';
 import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
+import postgreSQL from '../assets/postgreSQL.png';
 import react from '../assets/react.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
@@ -73,4 +79,10 @@ export default {
   skype,
   spotify,
   pfp,
+  mongoDB,
+  express,
+  django,
+  flask,
+  bootstrap,
+  postgreSQL,
 };
