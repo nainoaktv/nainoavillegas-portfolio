@@ -1,6 +1,6 @@
 #home {
   position: relative;
-  background: url('../../assets/darkBG.jpeg');
+  background: url('../../assets/darkfuture.jpeg');
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -62,7 +62,7 @@
     text-transform: uppercase;
     border-radius: 15px;
     flex-direction: row;
-    margin-top: 400px;
+    margin-top: 100px;
     width: auto;
 
     box-shadow: 0 0 20px rgb(255, 255, 255);
@@ -71,7 +71,7 @@
   .tag-cmp {
     flex-direction: column;
     margin-top: 3rem;
-
+    
     p {
       width: 100%;
       text-transform: uppercase;
