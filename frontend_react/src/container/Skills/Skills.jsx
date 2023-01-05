@@ -23,6 +23,7 @@ const Skills = () => {
       setSkills(data);
     })
   }, [])
+  
   return (
     <>
       <h2 className="head-text">Skills <span>&</span> Experience</h2>
