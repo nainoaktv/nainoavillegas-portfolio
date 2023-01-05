@@ -9,7 +9,7 @@ import './Testimonial.scss';
 const Testimonial = () => {
   const [brands, setBrands] = useState([]);
   const [testimonials, setTestimonials] = useState([]);
-  const [currenIndex, setCurrenIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const query = '*[_type == "testimonials"]';
@@ -27,7 +27,15 @@ const Testimonial = () => {
   }, [])
 
   return (
-    <div>Testimonial</div>
+    <>
+      {testimonials.length && (
+        <>
+          <div className="app__testimonial-item app__flex">
+            <img src={urlFor(testimonials[currentIndex].imgurl)} alt="testimonials" />
+          </div>
+        </>
+      )}
+    </>
   );
 }
 
