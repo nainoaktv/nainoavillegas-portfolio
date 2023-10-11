@@ -1,9 +1,9 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
-import { AppWrap } from '../../wrapper';
-import { images } from '../../constants';
-import './Header.scss';
+import { AppWrap } from "../../wrapper";
+import { images } from "../../constants";
+import "./Header.scss";
 
 const scaleVariants = {
   whileInView: {
@@ -11,16 +11,16 @@ const scaleVariants = {
     opacity: [0, 1],
     transition: {
       duration: 1,
-      ease: 'easeInOut',
+      ease: "easeInOut",
     },
-  }
-}
-    
+  },
+};
+
 const Header = () => {
   return (
     <div className="app__header app__flex">
       <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1]}}
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
         className="app__header-info"
       >
@@ -40,20 +40,19 @@ const Header = () => {
       </motion.div>
 
       <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1]}}
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
         <img src={images.pfp} alt="profile_bg" />
         {/* IF NEEDED: COMMENT BACK IN TO USE CIRCLE BACKGROUND */}
         {/* <motion.img
-          whileInView={{ scale: [0, 1]}}
+          whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
           src={images.circle}
           alt="profile_circle"
           className="overlay_circle"
         /> */}
-
       </motion.div>
 
       <motion.div
@@ -67,9 +66,8 @@ const Header = () => {
           </div>
         ))}
       </motion.div>
-
     </div>
   );
-}
+};
 
-export default AppWrap(Header, 'home');
+export default AppWrap(Header, "home");

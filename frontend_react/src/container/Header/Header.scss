@@ -1,6 +1,6 @@
 #home {
   position: relative;
-  background: url('../../assets/darkfuture.jpeg');
+  background: url("../../assets/darkfuture.jpeg");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -56,7 +56,8 @@
   align-items: flex-end;
   flex-direction: column;
 
-  .badge-cmp, .tag-cmp {
+  .badge-cmp,
+  .tag-cmp {
     padding: 1rem 2rem;
     border: var(--gray-color);
     text-transform: uppercase;
@@ -71,7 +72,7 @@
   .tag-cmp {
     flex-direction: column;
     margin-top: 3rem;
-    
+
     p {
       width: 100%;
       text-transform: uppercase;
@@ -107,7 +108,7 @@
     height: 100px;
     border-radius: 50%;
     background: var(--primary-color);
-    
+
     box-shadow: 0 0 20px rgb(255, 255, 255);
 
     img {
@@ -137,16 +138,16 @@
       width: 175px;
       height: 175px;
     }
-  
+
     div:nth-child(2) {
       width: 225px;
       height: 225px;
     }
-  
+
     div:nth-child(3) {
       width: 140px;
       height: 140px;
-    } 
+    }
   }
 
   @media screen and (max-width: 1200px) {
